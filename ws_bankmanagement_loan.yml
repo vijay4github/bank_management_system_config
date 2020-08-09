@@ -22,3 +22,7 @@ spring:
     show-sql: true
 vijay:
   kumar: testmessage1
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8060/eureka  

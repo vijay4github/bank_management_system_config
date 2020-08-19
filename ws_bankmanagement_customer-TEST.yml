@@ -48,3 +48,18 @@ management:
       enabled: true
 account:
   baseUrl: http://localhost:8072/loanservices
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          strategy: THREAD
+          semaphore:
+            maxConcurrentRequests: 20
+          thread:
+            timeoutInMilliseconds: 5000
+    findByOrderIdWithProjection:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000

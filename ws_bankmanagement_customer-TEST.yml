@@ -58,7 +58,7 @@ hystrix:
             maxConcurrentRequests: 20
           thread:
             timeoutInMilliseconds: 5000
-    findByOrderIdWithProjection:
+    fetchLoanDetailsByCustomerId:
       execution:
         isolation:
           thread:

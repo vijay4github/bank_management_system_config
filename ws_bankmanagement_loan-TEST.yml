@@ -48,3 +48,9 @@ management:
       enabled: true
     threaddump:
       enabled: true
+interestrate:
+  percentage:
+    10: 13.1
+    20: 12.5
+    30: 10.3
+    40: 9.7      

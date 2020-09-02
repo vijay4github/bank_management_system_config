@@ -1,0 +1,29 @@
+ws_bankmanagement_loanserver:
+  port: 8070
+  servlet:
+    context-path: /loanservices
+spring:
+  datasource:
+    #url: jdbc:h2:mem:testdb
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/bankmanagement
+    username: root
+    password: pass@word1
+  #h2:
+    #console:
+      #enabled: true
+      #path: /h2-console
+  application:
+    name: ws_bankmanagement_loan
+
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true
+vijay:
+  kumar: testmessage1
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8060/eureka  
